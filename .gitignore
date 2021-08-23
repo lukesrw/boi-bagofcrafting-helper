@@ -1,0 +1,8 @@
+/.buildpath
+/.project
+/.settings/
+./dist/
+node_modules
+tsconfig.tsbuildinfo
+*.tgz
+/js/
