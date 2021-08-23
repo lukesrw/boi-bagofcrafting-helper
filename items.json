@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Gnawed Leaf",
+        "quantity": 1,
+        "components": [
+            {
+                "Heart": 5,
+                "Penny": 1,
+                "Key": 1,
+                "Card": 1
+            },
+            {
+                "Heart": 4,
+                "Soul Heart": 1,
+                "Bomb": 3
+            },
+            {
+                "Heart": 2,
+                "Penny": 1,
+                "Key": 2,
+                "Bomb": 2,
+                "Pill": 1
+            },
+            {
+                "Penny": 4,
+                "Key": 1,
+                "Bomb": 3
+            }
+        ]
+    },
+    {
+        "name": "MaMa Mega!",
+        "quantity": 1,
+        "components": [
+            {
+                "Heart": 2,
+                "Soul Heart": 1,
+                "Nickel": 4,
+                "Card": 1
+            },
+            {
+                "Soul Heart": 2,
+                "Penny": 1,
+                "Nickel": 1,
+                "Bomb": 1,
+                "Pill": 3
+            },
+            {
+                "Soul Heart": 1,
+                "Penny": 1,
+                "Key": 1,
+                "Charged Key": 1,
+                "Bomb": 2
+            },
+            {
+                "Nickel": 3,
+                "Key": 2,
+                "Bomb": 3
+            }
+        ]
+    },
+    {
+        "name": "Daddy Longlegs",
+        "quantity": -1,
+        "components": [
+            {
+                "Heart": 2,
+                "Soul Heart": 4,
+                "Penny": 1,
+                "Nickel": 1
+            },
+            {
+                "Soul Heart": 5,
+                "Nickel": 1,
+                "Bomb": 1,
+                "Card": 1
+            },
+            {
+                "Soul Heart": 3,
+                "Penny": 2,
+                "Key": 1,
+                "Card": 1,
+                "Pill": 1
+            },
+            {
+                "Bone Heart": 1,
+                "Key": 1,
+                "Bomb": 6
+            }
+        ]
+    },
+    {
+        "name": "Fruity Plum",
+        "quantity": -1,
+        "components": [
+            {
+                "Heart": 4,
+                "Penny": 1,
+                "Nickel": 3
+            },
+            {
+                "Heart": 1,
+                "Penny": 5,
+                "Nickel": 1,
+                "Bomb": 1
+            },
+            {
+                "Heart": 1,
+                "Penny": 2,
+                "Key": 2,
+                "Bomb": 2,
+                "Pill": 1
+            },
+            {
+                "Nickel": 1,
+                "Key": 3,
+                "Bomb": 3,
+                "Pill": 1
+            }
+        ]
+    }
+]
