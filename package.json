@@ -29,6 +29,12 @@
         "eslint-clean": "del .eslintrc.json && del .eslintignore",
         "node-clean": "del package-lock.json && rmdir /S /Q node_modules"
     },
-    "dependencies": {},
-    "devDependencies": {}
+    "dependencies": {
+        "@types/screenshot-desktop": "^1.12.0",
+        "jimp": "^0.16.1",
+        "screenshot-desktop": "^1.12.7"
+    },
+    "devDependencies": {
+        "@types/node": "^16.7.1"
+    }
 }
