@@ -9,7 +9,6 @@ try {
     items_wanted = require(join(__dirname, "..", "items.json"));
 } catch (_1) {}
 
-const PIXEL_DIFF = 2141771264;
 const PIXEL_SIZE = 4;
 
 let offset: number;
@@ -33,7 +32,7 @@ async function getComponents() {
     );
 
     if ([4294967295, 2694881535].includes(arrow_pixel) || findArrow(screenshot, arrow.x, arrow.y)) {
-        slots = slots.map((slot, slot_i) => {
+        slots = slots.map(slot => {
             let p1 = String(screenshot.getPixelColor(slot.x, slot.y));
             let p2 = String(screenshot.getPixelColor(slot.x - 1, slot.y - 1));
             let p3 = String(screenshot.getPixelColor(slot.x + PIXEL_SIZE * 2, slot.y - 9));
@@ -47,9 +46,10 @@ async function getComponents() {
                 slot.item = PIXEL_TO_ITEM[p1 + p2];
             } else if (p1 in PIXEL_TO_ITEM) {
                 slot.item = PIXEL_TO_ITEM[p1];
-            } else {
+            } else if (items_wanted.length) {
                 slot.item = null;
-                console.log(`${slot_i + 1}. ${p1} ${p2} ${p3} ${p4}`);
+            } else {
+                slot.item = `${p1} ${p2} ${p3} ${p4}`;
             }
 
             return slot;
@@ -63,7 +63,7 @@ function pixelDiff(image: any, x1: number, y1: number, x2: number, y2: number) {
     let pixel1 = image.getPixelColor(x1, y1);
     let pixel2 = image.getPixelColor(x1 + x2, y1 + y2);
 
-    return Math.abs(pixel1 - pixel2) > PIXEL_DIFF;
+    return Math.abs(pixel1 - pixel2) > 2141771264;
 }
 
 function findArrow(screenshot: any, x: number, y: number) {
@@ -190,10 +190,6 @@ async function findIsaac() {
                                 }
 
                                 if (!already_output && fewest_discards.discards) {
-                                    if (fewest_discards.discards.length === 0) {
-                                        items_wanted[item_i].quantity -= 1;
-                                    }
-
                                     console.log(fewest_discards.discards);
                                     console.table(fewest_discards.items);
                                 }
